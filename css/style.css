@@ -192,7 +192,7 @@ footer a {
     transition: color 0.3s ease, transform 0.2s ease;
 }
 footer a:hover {
-    color: var(--orange-vif);
+    color: var(--gris-tres-fonce);
     transform: translateY(-3px);
 }
 
@@ -350,14 +350,14 @@ main h1::after{
 .contact-form button {
     margin-top: 15px;
     padding: 12px;
-    background-color: black;
+    background-color: var(--violet-doux);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .contact-form button:hover{
-    background-color: #333;
+    background-color: var(--violet-fonce);
 }
 .contact-buttons {
     display: flex;
@@ -373,11 +373,112 @@ main h1::after{
     transition: 0.3s;
 }
 .whatsapp {
-    background-color: #25d366;
+    margin-top: 5rem;
+    background-color: var(--violet-doux);
 }
 .telegram {
-    background-color: #0088cc;
+    margin-top: 5rem;
+    background-color: var(--violet-doux);
 }
 .btn:hover {
     opacity: 0.8;
+}
+.technologie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.technologie .text {
+    flex: 1;
+    padding-right: 20px;
+    color: var(--gris-fonce);
+}
+.technologie .image {
+    flex: 0 0 200px;
+}
+.technologie .image img {
+    width: 600px;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.codage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.codage .image {
+    flex: 0 0 200px;
+}
+.codage .image img {
+    width: 600px;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.codage .text {
+    flex: 1;
+    padding-left: 20px;
+    color: var(--gris-fonce);
+}
+.musique {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.musique .text {
+    flex: 1;
+    padding-right: 20px;
+    color: var(--gris-fonce);
+}
+.musique .image {
+    flex: 0 0 200px;
+}
+.musique .image img {
+    width: 600px;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+
+}
+.technologie h3 {
+    color: var(--violet-doux);
+}
+.codage h3 {
+    color: var(--violet-doux);
+}
+.musique h3 {
+    color: var(--violet-doux);
+}
+.divertissement {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    transition: 0.3s ease;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
 }
